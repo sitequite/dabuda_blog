@@ -11,11 +11,12 @@ mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a
 include: ["_pages"]
 permalink: /:title/
 
+
 # Plugins
 plugins: 
   - jekyll-feed
   - jekyll-sitemap
-  - jekyll-paginate
+  - jekyll-paginate-v2
   - jekyll-seo-tag
   
 authors:
@@ -66,10 +67,18 @@ markdown: kramdown
 highlighter: rouge
 
 # Paginate
-paginate: 10
-paginator_path: "blog/page:num"
+#paginate: 10
+#paginator_path: "blog/page:num"
 
-
+# Pagination Settings
+pagination:
+  enabled: true
+  per_page: 4
+  permalink: '/page:num/'
+  title: ':title - страница :num от :max'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
 
 # Exclude metadata and development time dependencies (like Grunt plugins)
 exclude: [README.markdown, package.json, grunt.js, Gruntfile.js, Gruntfile.coffee, node_modules]
