@@ -67,6 +67,7 @@ highlighter: rouge
 
 # Paginate
 paginate: 10
+paginator_path: "blog/page:num"
 
 
 

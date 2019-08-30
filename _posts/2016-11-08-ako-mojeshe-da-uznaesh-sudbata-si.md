@@ -3,7 +3,7 @@ layout: post
 title:  "Ако можеше да узнаеш съдбата си, би ли го направил?"
 author: daniel
 categories: [ Статии ]
-image: assets/images/4.jpg
+image: assets/images/cover6.jpg
 ---
 There are lots of powerful things you can do with the Markdown editor
 

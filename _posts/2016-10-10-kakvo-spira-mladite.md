@@ -3,7 +3,7 @@ layout: post
 title:  "Какво спира младите в България да следват мечтите си?"
 author: daniel
 categories: [ Статии ]
-image: assets/images/12.jpg
+image: assets/images/cover4.jpg
 tags: [featured]
 ---
 I’ve been through fire and water, I tell you! From my earliest pebblehood the wildest things you could imagine have been happening to this world of ours, and I have been right in the midst of them.
