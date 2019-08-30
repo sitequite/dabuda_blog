@@ -4,21 +4,24 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Mundana Free Jekyll Theme | DaBuda.net</title>
+    <title>Какво спира младите в България да следват мечтите си? | DaBuda.net</title>
 
     <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Mundana Free Jekyll Theme | DaBuda.net</title>
+<title>Какво спира младите в България да следват мечтите си? | DaBuda.net</title>
 <meta name="generator" content="Jekyll v3.8.5" />
-<meta property="og:title" content="Mundana Free Jekyll Theme" />
+<meta property="og:title" content="Какво спира младите в България да следват мечтите си?" />
+<meta name="author" content="daniel" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="A great Jekyll theme developed by Sal @wowthemesnet." />
-<meta property="og:description" content="A great Jekyll theme developed by Sal @wowthemesnet." />
-<link rel="canonical" href="http://localhost:4000/dabuda_blog/" />
-<meta property="og:url" content="http://localhost:4000/dabuda_blog/" />
+<meta name="description" content="I’ve been through fire and water, I tell you! From my earliest pebblehood the wildest things you could imagine have been happening to this world of ours, and I have been right in the midst of them." />
+<meta property="og:description" content="I’ve been through fire and water, I tell you! From my earliest pebblehood the wildest things you could imagine have been happening to this world of ours, and I have been right in the midst of them." />
+<link rel="canonical" href="http://localhost:4000/dabuda_blog/kakvo-spira-mladite/" />
+<meta property="og:url" content="http://localhost:4000/dabuda_blog/kakvo-spira-mladite/" />
 <meta property="og:site_name" content="DaBuda.net" />
-<link rel="next" href="http://localhost:4000/dabuda_blog/page2/" />
+<meta property="og:image" content="http://localhost:4000/dabuda_blog/assets/images/cover4.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2016-10-10T00:00:00+03:00" />
 <script type="application/ld+json">
-{"@type":"WebSite","url":"http://localhost:4000/dabuda_blog/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/dabuda_blog/assets/images/logo.png"}},"name":"DaBuda.net","description":"A great Jekyll theme developed by Sal @wowthemesnet.","headline":"Mundana Free Jekyll Theme","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","datePublished":"2016-10-10T00:00:00+03:00","image":"http://localhost:4000/dabuda_blog/assets/images/cover4.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/dabuda_blog/kakvo-spira-mladite/"},"url":"http://localhost:4000/dabuda_blog/kakvo-spira-mladite/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/dabuda_blog/assets/images/logo.png"},"name":"daniel"},"author":{"@type":"Person","name":"daniel"},"description":"I’ve been through fire and water, I tell you! From my earliest pebblehood the wildest things you could imagine have been happening to this world of ours, and I have been right in the midst of them.","headline":"Какво спира младите в България да следват мечтите си?","dateModified":"2016-10-10T00:00:00+03:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -103,17 +106,17 @@ var documents = [{
     "id": 2,
     "url": "http://localhost:4000/dabuda_blog/author-jane.html",
     "title": "Jane",
-    "body": "                        Jane Follow:         https://www. wowthemes. net         Blogger, fashionista, love to explore new ideas and write on my morning coffee!                                   Posts by Jane:               "
+    "body": "                        {{page. title}} Follow:         {{ site. authors. jane. site }}         {{ site. authors. jane. bio }}                                   Posts by {{page. title}}:       {% assign posts = site. posts | where: author , jane  %}      {% for post in posts %}      {% include main-loop-card. html %}      {% endfor %}  "
     }, {
     "id": 3,
     "url": "http://localhost:4000/dabuda_blog/author-sal.html",
     "title": "Sal",
-    "body": "                        Sal Follow:         https://www. wowthemes. net         Hi, I am Sal, the author of Mundana, the theme you're currently previewing. I hope you like it!                                   Posts by Sal:               "
+    "body": "                        {{page. title}} Follow:         {{ site. authors. sal. site }}         {{ site. authors. sal. bio }}                                   Posts by {{page. title}}:       {% assign posts = site. posts | where: author , sal  %}      {% for post in posts %}      {% include main-loop-card. html %}      {% endfor %}  "
     }, {
     "id": 4,
     "url": "http://localhost:4000/dabuda_blog/authors-list.html",
     "title": "Authors",
-    "body": "Authors:                                             Sal :       (View Posts)      Hi, I am Sal, the author of Mundana, the theme you're currently previewing. I hope you like it!                          &nbsp;       &nbsp;                                                                             Jane :       (View Posts)      Blogger, fashionista, love to explore new ideas and write on my morning coffee!                          &nbsp;       &nbsp;                                                                             Даниел Богдански :       (View Posts)      Здравейте, аз съм автора на Dabuda. net. В момента съм на 22 години и уча международен бизнес в Холандия.                           &nbsp;       &nbsp;                                      "
+    "body": "{{page. title}}:     {% for author in site. authors %}                                         {{ author[1]. name }} :       (View Posts)      {{ author[1]. bio }}                          &nbsp;       &nbsp;                                    {% endfor %}  "
     }, {
     "id": 5,
     "url": "http://localhost:4000/dabuda_blog/buy-me-a-coffee.html",
@@ -123,52 +126,52 @@ var documents = [{
     "id": 6,
     "url": "http://localhost:4000/dabuda_blog/categories.html",
     "title": "Categories",
-    "body": "          Categories               Автори:                                  		ЗА МЕН	: 		  Казвам се Даниел Богдански и съм роден и израснал в красивия и патриотичен град Карлово. Страст и хоби са ми литературата, историята и филмите, но най-много ме вълнуват сложните взаим. . . 	 			В 				Автори, 								Feb 04, 2014						                              Статии:                                  		ЗАЩО?	: 		  От доста време не съм писал. Даже празният лист пред мен, тишината в стаята, тихата музика на фон ме плашат леко. Може би, защото когато човек пише той трябва да бъде дълбоко откровен. . . 	 			В 				Статии, 								Jul 18, 2018						                                 		За малко в България	: 		  Ще започна от там, че преди месец бях в България и успях да събера впечатления, за които си струва да се пише – видях се със семейство и познати, посетих бившото си училище и дори усп. . . 	 			В 				Статии, 								Feb 19, 2018						                                 		На двадесет	: 		  Баща ми винаги ми казва, че животът е много кратък: “ще мине като миг”- все повтаря той. “Сега си на двайсет, докато се изучиш, след това да поработиш и вече си на трийсет. На тридесе. . . 	 			В 				Статии, 								Aug 17, 2017						                                 		Да спреш за миг – тайната на щастието	: 		  Постиженията в живота си определяме в постоянно съревнование с другите около нас – например Бил Гейтс има 86 милиарда, а Уорън Бъфет “само” 76, или пък ти имаш Форд Фиеста, а комшията. . . 	 			В 				Статии, 								May 17, 2017						                                 		5 необикновени места в българските планини	: 		  The first mass-produced book to deviate from a rectilinear format, at least in the United States, is thought to be this 1863 edition of Red Riding Hood, cut into the shape of the prot. . . 	 			В 				Статии, 								Feb 02, 2017						                                 		Какво е това носталгия?	: 		  This is changed. As I engage in the so-called “bull sessions” around and about the school, I too often find that most college men have a misconception of the purpose of education. Mos. . . 	 			В 				Статии, 								Feb 02, 2017						                                 		31 декември – последната страница	: 		  The first mass-produced book to deviate from a rectilinear format, at least in the United States, is thought to be this 1863 edition of Red Riding Hood, cut into the shape of the prot. . . 	 			В 				Статии, 								Dec 31, 2016						                                 		21 век – самоунищожение или личностно развитие	: 		  Even the press, the classroom, the platform, and the pulpit in many instances do not give us objective and unbiased truths. To save man from the morass of propaganda, in my opinion, i. . . 	 			В 				Статии, 								Nov 28, 2016						                                 		Ако можеше да узнаеш съдбата си, би ли го направил?	: 		  There are lots of powerful things you can do with the Markdown editor	 			В 				Статии, 								Nov 08, 2016						                                 		Какво означава да бъдеш будител?	: 		  От доста време си мисля, кое е най-забележителното качество, което са притежавали всички видни български революционери, писатели, духовници и културни дейци. Накрая заключих, че може . . . 	 			В 				Статии, 								Nov 01, 2016						                                 		Какво спира младите в България да следват мечтите си?	: 		  I’ve been through fire and water, I tell you! From my earliest pebblehood the wildest things you could imagine have been happening to this world of ours, and I have been right in the . . . 	 			В 				Статии, 								Oct 10, 2016						                                 		'Черешко, чьорна вишничко'	: 		  Бях в Родопите, в онази сакрална част от България, съхранила в себе си предания за изгубени съкровища, легенди за смели юнаци, за мистичното и българското. Стигнах до село Гела, разпо. . . 	 			В 				Статии, 								Oct 03, 2016						                                 		Песента на влака	: 		  Гледах вагоните – празни и пусти, зловещо отразяваха слабата светлина от лампата на гарата. Влакът трябваше да пристигне 50 минути след полунощ.  Отегчен, с мънкащ глас служителя на. . . 	 			В 				Статии, 								Sep 24, 2016						                                 		Разговор със себе си	: 		  Това, което ще прочетете е част от събитията случили се в моя живот през изминалите 10 месеца, както и размисли за изборите, които правим в живота. 	 			В 				Статии, 								Sep 10, 2016						                                             Избрани:    				                                          Какво е това носталгия?                          В                     Статии,                                                                                           Какво означава да бъдеш будител?                          В                     Статии,                                                                                           Какво спира младите в България да следват мечтите си?                          В                     Статии,                                                                                           Песента на влака                          В                     Статии,                                                                   "
+    "body": "          Categories          {% for category in site. categories %}     {{ category[0] }}:           {% assign pages_list = category[1] %}    {% for post in pages_list %}    {% if post. title != null %}     {% if group == null or group == post. group %}           {% include main-loop-card. html %}     {% endif %}    {% endif %}    {% endfor %}    {% assign pages_list = nil %}    {% assign group = nil %}    {% endfor %}                  {% include sidebar-featured. html %}          "
     }, {
     "id": 7,
     "url": "http://localhost:4000/dabuda_blog/contact.html",
     "title": "Contact",
-    "body": "  Please send your message to DaBuda. net. We will reply as soon as possible!   "
+    "body": "  Please send your message to {{site. name}}. We will reply as soon as possible!   "
     }, {
     "id": 8,
     "url": "http://localhost:4000/dabuda_blog/privacy-policy.html",
     "title": "Privacy Policy",
-    "body": "“DaBuda. net” takes your privacy seriously. To better protect your privacy we provide this privacy policy notice explaining the way your personal information is collected and used. Collection of Routine Information: This website track basic information about their visitors. This information includes, but is not limited to, IP addresses, browser details, timestamps and referring pages. None of this information can personally identify specific visitor to this website. The information is tracked for routine administration and maintenance purposes. Cookies: Where necessary, this website uses cookies to store information about a visitor’s preferences and history in order to better serve the visitor and/or present the visitor with customized content. Advertisement and Other Third Parties: Advertising partners and other third parties may use cookies, scripts and/or web beacons to track visitor activities on this website in order to display advertisements and other useful information. Such tracking is done directly by the third parties through their own servers and is subject to their own privacy policies. This website has no access or control over these cookies, scripts and/or web beacons that may be used by third parties. Learn how to opt out of Google’s cookie usage. Links to Third Party Websites: We have included links on this website for your use and reference. We are not responsible for the privacy policies on these websites. You should be aware that the privacy policies of these websites may differ from our own. Security: The security of your personal information is important to us, but remember that no method of transmission over the Internet, or method of electronic storage, is 100% secure. While we strive to use commercially acceptable means to protect your personal information, we cannot guarantee its absolute security. Changes To This Privacy Policy: This Privacy Policy is effective and will remain in effect except with respect to any changes in its provisions in the future, which will be in effect immediately after being posted on this page. We reserve the right to update or change our Privacy Policy at any time and you should check this Privacy Policy periodically. If we make any material changes to this Privacy Policy, we will notify you either through the email address you have provided us, or by placing a prominent notice on our website. Contact Information: For any questions or concerns regarding the privacy policy, please contact us here. "
+    "body": "”{{site. name}}” takes your privacy seriously. To better protect your privacy we provide this privacy policy notice explaining the way your personal information is collected and used. Collection of Routine Information: This website track basic information about their visitors. This information includes, but is not limited to, IP addresses, browser details, timestamps and referring pages. None of this information can personally identify specific visitor to this website. The information is tracked for routine administration and maintenance purposes. Cookies: Where necessary, this website uses cookies to store information about a visitor’s preferences and history in order to better serve the visitor and/or present the visitor with customized content. Advertisement and Other Third Parties: Advertising partners and other third parties may use cookies, scripts and/or web beacons to track visitor activities on this website in order to display advertisements and other useful information. Such tracking is done directly by the third parties through their own servers and is subject to their own privacy policies. This website has no access or control over these cookies, scripts and/or web beacons that may be used by third parties. Learn how to opt out of Google’s cookie usage. Links to Third Party Websites: We have included links on this website for your use and reference. We are not responsible for the privacy policies on these websites. You should be aware that the privacy policies of these websites may differ from our own. Security: The security of your personal information is important to us, but remember that no method of transmission over the Internet, or method of electronic storage, is 100% secure. While we strive to use commercially acceptable means to protect your personal information, we cannot guarantee its absolute security. Changes To This Privacy Policy: This Privacy Policy is effective and will remain in effect except with respect to any changes in its provisions in the future, which will be in effect immediately after being posted on this page. We reserve the right to update or change our Privacy Policy at any time and you should check this Privacy Policy periodically. If we make any material changes to this Privacy Policy, we will notify you either through the email address you have provided us, or by placing a prominent notice on our website. Contact Information: For any questions or concerns regarding the privacy policy, please contact us here. "
     }, {
     "id": 9,
     "url": "http://localhost:4000/dabuda_blog/tags.html",
     "title": "Tags",
-    "body": "          Tags               sticky:                                  		ЗА МЕН	: 		  Казвам се Даниел Богдански и съм роден и израснал в красивия и патриотичен град Карлово. Страст и хоби са ми литературата, историята и филмите, но най-много ме вълнуват сложните взаим. . . 	 			В 				Автори, 								Feb 04, 2014						                              featured:                                  		Какво е това носталгия?	: 		  This is changed. As I engage in the so-called “bull sessions” around and about the school, I too often find that most college men have a misconception of the purpose of education. Mos. . . 	 			В 				Статии, 								Feb 02, 2017						                                 		Какво означава да бъдеш будител?	: 		  От доста време си мисля, кое е най-забележителното качество, което са притежавали всички видни български революционери, писатели, духовници и културни дейци. Накрая заключих, че може . . . 	 			В 				Статии, 								Nov 01, 2016						                                 		Какво спира младите в България да следват мечтите си?	: 		  I’ve been through fire and water, I tell you! From my earliest pebblehood the wildest things you could imagine have been happening to this world of ours, and I have been right in the . . . 	 			В 				Статии, 								Oct 10, 2016						                                 		Песента на влака	: 		  Гледах вагоните – празни и пусти, зловещо отразяваха слабата светлина от лампата на гарата. Влакът трябваше да пристигне 50 минути след полунощ.  Отегчен, с мънкащ глас служителя на. . . 	 			В 				Статии, 								Sep 24, 2016						                                             Избрани:    				                                          Какво е това носталгия?                          В                     Статии,                                                                                           Какво означава да бъдеш будител?                          В                     Статии,                                                                                           Какво спира младите в България да следват мечтите си?                          В                     Статии,                                                                                           Песента на влака                          В                     Статии,                                                                   "
+    "body": "          Tags          {% for tag in site. tags %}     {{ tag[0] }}:           {% assign pages_list = tag[1] %}    {% for post in pages_list %}    {% if post. title != null %}     {% if group == null or group == post. group %}           {% include main-loop-card. html %}     {% endif %}    {% endif %}    {% endfor %}    {% assign pages_list = nil %}    {% assign group = nil %}    {% endfor %}                  {% include sidebar-featured. html %}          "
     }, {
     "id": 10,
     "url": "http://localhost:4000/dabuda_blog/robots.txt",
     "title": "",
-    "body": "Sitemap: http://localhost:4000/dabuda_blog/sitemap. xml "
+    "body": "      Sitemap: {{ “sitemap. xml”   absolute_url }}   "
     }, {
     "id": 11,
     "url": "http://localhost:4000/dabuda_blog/blog/index.html",
     "title": "Статии",
-    "body": "              Всички постове:                   		ЗАЩО?	: 		  От доста време не съм писал. Даже празният лист пред мен, тишината в стаята, тихата музика на фон ме плашат леко. Може би, защото когато човек пише той трябва да бъде дълбоко откровен. . . 	 			В 				Статии, 								Jul 18, 2018						                  		За малко в България	: 		  Ще започна от там, че преди месец бях в България и успях да събера впечатления, за които си струва да се пише – видях се със семейство и познати, посетих бившото си училище и дори усп. . . 	 			В 				Статии, 								Feb 19, 2018						                  		На двадесет	: 		  Баща ми винаги ми казва, че животът е много кратък: “ще мине като миг”- все повтаря той. “Сега си на двайсет, докато се изучиш, след това да поработиш и вече си на трийсет. На тридесе. . . 	 			В 				Статии, 								Aug 17, 2017						                  		Да спреш за миг – тайната на щастието	: 		  Постиженията в живота си определяме в постоянно съревнование с другите около нас – например Бил Гейтс има 86 милиарда, а Уорън Бъфет “само” 76, или пък ти имаш Форд Фиеста, а комшията. . . 	 			В 				Статии, 								May 17, 2017						                                                &laquo;                              1                               2                               3                               4                              Следваща страница &raquo;                                          Избрани:    				                                          Какво е това носталгия?                          В                     Статии,                                                                                           Какво означава да бъдеш будител?                          В                     Статии,                                                                                           Какво спира младите в България да следват мечтите си?                          В                     Статии,                                                                                           Песента на влака                          В                     Статии,                                                               "
+    "body": "              Всички постове:         {% for post in paginator. posts %}          {% include main-loop-card. html %}        {% endfor %}                   {% if paginator. total_pages &gt; 1 %}              {% if paginator. previous_page %}        &laquo; Предишна страница       {% else %}        &laquo;       {% endif %}       {% for page in (1. . paginator. total_pages) %}        {% if page == paginator. page %}        {{ page }}        {% elsif page == 1 %}        {{ page }}        {% else %}        {{ page }}        {% endif %}       {% endfor %}       {% if paginator. next_page %}        Следваща страница &raquo;       {% else %}        &raquo;       {% endif %}            {% endif %}                     {% include sidebar-featured. html %}      "
     }, {
     "id": 12,
     "url": "http://localhost:4000/dabuda_blog/blog/page2/index.html",
     "title": "Статии - страница 2 от 4",
-    "body": "              Всички постове:                   		Какво е това носталгия?	: 		  This is changed. As I engage in the so-called “bull sessions” around and about the school, I too often find that most college men have a misconception of the purpose of education. Mos. . . 	 			В 				Статии, 								Feb 02, 2017						                  		5 необикновени места в българските планини	: 		  The first mass-produced book to deviate from a rectilinear format, at least in the United States, is thought to be this 1863 edition of Red Riding Hood, cut into the shape of the prot. . . 	 			В 				Статии, 								Feb 02, 2017						                  		31 декември – последната страница	: 		  The first mass-produced book to deviate from a rectilinear format, at least in the United States, is thought to be this 1863 edition of Red Riding Hood, cut into the shape of the prot. . . 	 			В 				Статии, 								Dec 31, 2016						                  		21 век – самоунищожение или личностно развитие	: 		  Even the press, the classroom, the platform, and the pulpit in many instances do not give us objective and unbiased truths. To save man from the morass of propaganda, in my opinion, i. . . 	 			В 				Статии, 								Nov 28, 2016						                                                &laquo; Предишна страница                              1                               2                               3                               4                              Следваща страница &raquo;                                          Избрани:    				                                          Какво е това носталгия?                          В                     Статии,                                                                                           Какво означава да бъдеш будител?                          В                     Статии,                                                                                           Какво спира младите в България да следват мечтите си?                          В                     Статии,                                                                                           Песента на влака                          В                     Статии,                                                               "
+    "body": "              Всички постове:         {% for post in paginator. posts %}          {% include main-loop-card. html %}        {% endfor %}                   {% if paginator. total_pages &gt; 1 %}              {% if paginator. previous_page %}        &laquo; Предишна страница       {% else %}        &laquo;       {% endif %}       {% for page in (1. . paginator. total_pages) %}        {% if page == paginator. page %}        {{ page }}        {% elsif page == 1 %}        {{ page }}        {% else %}        {{ page }}        {% endif %}       {% endfor %}       {% if paginator. next_page %}        Следваща страница &raquo;       {% else %}        &raquo;       {% endif %}            {% endif %}                     {% include sidebar-featured. html %}      "
     }, {
     "id": 13,
     "url": "http://localhost:4000/dabuda_blog/blog/page3/index.html",
     "title": "Статии - страница 3 от 4",
-    "body": "              Всички постове:                   		Ако можеше да узнаеш съдбата си, би ли го направил?	: 		  There are lots of powerful things you can do with the Markdown editor	 			В 				Статии, 								Nov 08, 2016						                  		Какво означава да бъдеш будител?	: 		  От доста време си мисля, кое е най-забележителното качество, което са притежавали всички видни български революционери, писатели, духовници и културни дейци. Накрая заключих, че може . . . 	 			В 				Статии, 								Nov 01, 2016						                  		Какво спира младите в България да следват мечтите си?	: 		  I’ve been through fire and water, I tell you! From my earliest pebblehood the wildest things you could imagine have been happening to this world of ours, and I have been right in the . . . 	 			В 				Статии, 								Oct 10, 2016						                  		'Черешко, чьорна вишничко'	: 		  Бях в Родопите, в онази сакрална част от България, съхранила в себе си предания за изгубени съкровища, легенди за смели юнаци, за мистичното и българското. Стигнах до село Гела, разпо. . . 	 			В 				Статии, 								Oct 03, 2016						                                                &laquo; Предишна страница                              1                               2                               3                               4                              Следваща страница &raquo;                                          Избрани:    				                                          Какво е това носталгия?                          В                     Статии,                                                                                           Какво означава да бъдеш будител?                          В                     Статии,                                                                                           Какво спира младите в България да следват мечтите си?                          В                     Статии,                                                                                           Песента на влака                          В                     Статии,                                                               "
+    "body": "              Всички постове:         {% for post in paginator. posts %}          {% include main-loop-card. html %}        {% endfor %}                   {% if paginator. total_pages &gt; 1 %}              {% if paginator. previous_page %}        &laquo; Предишна страница       {% else %}        &laquo;       {% endif %}       {% for page in (1. . paginator. total_pages) %}        {% if page == paginator. page %}        {{ page }}        {% elsif page == 1 %}        {{ page }}        {% else %}        {{ page }}        {% endif %}       {% endfor %}       {% if paginator. next_page %}        Следваща страница &raquo;       {% else %}        &raquo;       {% endif %}            {% endif %}                     {% include sidebar-featured. html %}      "
     }, {
     "id": 14,
     "url": "http://localhost:4000/dabuda_blog/blog/page4/index.html",
     "title": "Статии - страница 4 от 4",
-    "body": "              Всички постове:                   		Песента на влака	: 		  Гледах вагоните – празни и пусти, зловещо отразяваха слабата светлина от лампата на гарата. Влакът трябваше да пристигне 50 минути след полунощ.  Отегчен, с мънкащ глас служителя на. . . 	 			В 				Статии, 								Sep 24, 2016						                  		Разговор със себе си	: 		  Това, което ще прочетете е част от събитията случили се в моя живот през изминалите 10 месеца, както и размисли за изборите, които правим в живота. 	 			В 				Статии, 								Sep 10, 2016						                  		ЗА МЕН	: 		  Казвам се Даниел Богдански и съм роден и израснал в красивия и патриотичен град Карлово. Страст и хоби са ми литературата, историята и филмите, но най-много ме вълнуват сложните взаим. . . 	 			В 				Автори, 								Feb 04, 2014						                                                &laquo; Предишна страница                              1                               2                               3                               4                              &raquo;                                          Избрани:    				                                          Какво е това носталгия?                          В                     Статии,                                                                                           Какво означава да бъдеш будител?                          В                     Статии,                                                                                           Какво спира младите в България да следват мечтите си?                          В                     Статии,                                                                                           Песента на влака                          В                     Статии,                                                               "
+    "body": "              Всички постове:         {% for post in paginator. posts %}          {% include main-loop-card. html %}        {% endfor %}                   {% if paginator. total_pages &gt; 1 %}              {% if paginator. previous_page %}        &laquo; Предишна страница       {% else %}        &laquo;       {% endif %}       {% for page in (1. . paginator. total_pages) %}        {% if page == paginator. page %}        {{ page }}        {% elsif page == 1 %}        {{ page }}        {% else %}        {{ page }}        {% endif %}       {% endfor %}       {% if paginator. next_page %}        Следваща страница &raquo;       {% else %}        &raquo;       {% endif %}            {% endif %}                     {% include sidebar-featured. html %}      "
     }, {
     "id": 15,
     "url": "http://localhost:4000/dabuda_blog/index.html",
     "title": "Mundana Free Jekyll Theme",
-    "body": "                              ЗА МЕН                  Казвам се Даниел Богдански и съм роден и израснал в красивия и патриотичен град Карлово. Страст и хоби са . . .                 Прочети още            	                            Всички постове:                   		Какво е това носталгия?	: 		  This is changed. As I engage in the so-called “bull sessions” around and about the school, I too often find that most college men have a misconception of the purpose of education. Mos. . . 	 			В 				Статии, 								Feb 02, 2017						                  		5 необикновени места в българските планини	: 		  The first mass-produced book to deviate from a rectilinear format, at least in the United States, is thought to be this 1863 edition of Red Riding Hood, cut into the shape of the prot. . . 	 			В 				Статии, 								Feb 02, 2017						                  		31 декември – последната страница	: 		  The first mass-produced book to deviate from a rectilinear format, at least in the United States, is thought to be this 1863 edition of Red Riding Hood, cut into the shape of the prot. . . 	 			В 				Статии, 								Dec 31, 2016						                  		21 век – самоунищожение или личностно развитие	: 		  Even the press, the classroom, the platform, and the pulpit in many instances do not give us objective and unbiased truths. To save man from the morass of propaganda, in my opinion, i. . . 	 			В 				Статии, 								Nov 28, 2016						                                                &laquo;                              1                               2                               3                              Следваща страница &raquo;                                          Избрани:    				                                          Какво е това носталгия?                          В                     Статии,                                                                                           Какво означава да бъдеш будител?                          В                     Статии,                                                                                           Какво спира младите в България да следват мечтите си?                          В                     Статии,                                                                                           Песента на влака                          В                     Статии,                                                               "
+    "body": "  {% if page. url ==  /index. html  %}{% for post in site. posts %} {% if post. tags contains  sticky  %}                    {{post. title}}                  {{ post. excerpt | strip_html | strip_newlines | truncate: 109 }}                 Прочети още            	             {% endif %}{% endfor %}{% endif %}                Всички постове:         {% for post in paginator. posts %}          {% include main-loop-card. html %}        {% endfor %}                   {% if paginator. total_pages &gt; 1 %}              {% if paginator. previous_page %}        &laquo; Предишна страница       {% else %}        &laquo;       {% endif %}       {% for page in (1. . paginator. total_pages) %}        {% if page == paginator. page %}        {{ page }}        {% elsif page == 1 %}        {{ page }}        {% else %}        {{ page }}        {% endif %}       {% endfor %}       {% if paginator. next_page %}        Следваща страница &raquo;       {% else %}        &raquo;       {% endif %}            {% endif %}                     {% include sidebar-featured. html %}      "
     }, {
     "id": 16,
     "url": "http://localhost:4000/dabuda_blog/page2/index.html",
@@ -321,296 +324,182 @@ function lunr_search(term) {
 
     <!-- Content -->
     <main role="main" class="site-content">
-        <div class="container">
-    
-
-<!-- Sticky - add sticky tag to the post you want to highlight here - tags: [sticky] -->
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-<div class="jumbotron jumbotron-fluid jumbotron-home pt-0 pb-0 mt-3 mb-2rem bg-lightblue position-relative">
-    <div class="pl-4 pr-0 h-100 tofront">
-        <div class="row justify-content-between">
-            <div class="col-md-6 pt-6 pb-6 pr-lg-4 align-self-center">
-                <h1 class="mb-3">ЗА МЕН</h1>
-                <p class="mb-3 lead">
-                    Казвам се Даниел Богдански и съм роден и израснал в красивия и патриотичен град Карлово. Страст и хоби са ...
-                </p>
-                <a href="/dabuda_blog/za-men/" class="btn btn-dark">Прочети още</a>
-            </div>
-            <div class="col-md-6 d-none d-md-block pr-0" style="background-size:cover;background-image:url(/dabuda_blog/assets/images/about_me_cover.jpg);">	
-            </div>
-        </div>
-    </div>
-</div> 
-
-
-
-
-    
-<!-- Now the rest of the posts with the usual loop but with an offset:4 on the first page so we can skeep the first 4 posts displayed above -->
-    
-<div class="row mt-3">
-   
-    <div class="col-md-8 main-loop">
         
-        <h4 class="font-weight-bold spanborder"><span>Всички постове</span></h4>
-        
-
-        
-        
-            <div class="mb-5 d-flex justify-content-between main-loop-card">
-<div class="pr-3">
-	<h2 class="mb-1 h4 font-weight-bold">
-	<a class="text-dark" href="/dabuda_blog/kakvo-e-nostalgia/">Какво е това носталгия?</a>
-	</h2>
-	<p class="excerpt">
-	   This is changed. As I engage in the so-called “bull sessions” around and about the school, I too often find that most college men have a misconception of the purpose of education. Mos...
-	</p>
-	<small class="d-block text-muted">
-		В <span class="catlist">
-		
-		<a class="text-capitalize text-muted smoothscroll" href="/dabuda_blog/categories.html#статии">Статии</a><span class="sep">, </span>
-		
-		</span>
-	</small>
-	<small class="text-muted">
-		Feb 02, 2017
-	</small>
-</div>
-
-	<div class="col-md-3 pr-0 text-right">
-	<a href="/dabuda_blog/kakvo-e-nostalgia/">
-	<img class="w-100" src="/dabuda_blog/assets/images/1.jpg" alt="Какво е това носталгия?">
-	</a>
+<div class="container">
+<div class="jumbotron jumbotron-fluid mb-3 pl-0 pt-0 pb-0 bg-white position-relative">
+		<div class="h-100 tofront">
+			<div class="row  justify-content-between ">
+				<div class=" col-md-6  pr-0 pr-md-4 pt-4 pb-4 align-self-center">
+					<p class="text-uppercase font-weight-bold">
+                        <span class="catlist">
+						
+                          <a class="sscroll text-danger" href="/dabuda_blog/categories.html#статии">статии</a><span class="sep">, </span>
+                        
+                        </span>
+					</p>
+					<h1 class="display-4 mb-4 article-headline">Какво спира младите в България да следват мечтите си?</h1>
+					<div class="d-flex align-items-center">
+                        
+                        <img class="rounded-circle" src="/dabuda_blog//assets/images/avatar1.jpg" alt="Даниел Богдански" width="70"/>
+                        
+						<small class="ml-3"> Даниел Богдански <span><a target="_blank" href="https://twitter.com/wowthemesnet" class="btn btn-outline-success btn-sm btn-round ml-1">Последвай</a></span>
+                            <span class="text-muted d-block mt-1">Oct 10, 2016 · <span class="reading-time">
+  
+  
+    1 min read
+  
+</span>
+    </span>
+						</small>
+					</div>
+				</div>
+                
+				<div class="col-md-6 pr-0 align-self-center">
+					<img class="rounded" src="/dabuda_blog/assets/images/cover4.jpg" alt="Какво спира младите в България да следват мечтите си?">
+				</div>
+                
+			</div>
+		</div>
 	</div>
-
-</div>
-        
-        
-        
-            <div class="mb-5 d-flex justify-content-between main-loop-card">
-<div class="pr-3">
-	<h2 class="mb-1 h4 font-weight-bold">
-	<a class="text-dark" href="/dabuda_blog/pet-neobiknoveni-mesta-bulgarskite-planini/">5 необикновени места в българските планини</a>
-	</h2>
-	<p class="excerpt">
-	   The first mass-produced book to deviate from a rectilinear format, at least in the United States, is thought to be this 1863 edition of Red Riding Hood, cut into the shape of the prot...
-	</p>
-	<small class="d-block text-muted">
-		В <span class="catlist">
-		
-		<a class="text-capitalize text-muted smoothscroll" href="/dabuda_blog/categories.html#статии">Статии</a><span class="sep">, </span>
-		
-		</span>
-	</small>
-	<small class="text-muted">
-		Feb 02, 2017
-	</small>
 </div>
 
-	<div class="col-md-3 pr-0 text-right">
-	<a href="/dabuda_blog/pet-neobiknoveni-mesta-bulgarskite-planini/">
-	<img class="w-100" src="/dabuda_blog/assets/images/2.jpg" alt="5 необикновени места в българските планини">
-	</a>
-	</div>
 
-</div>
-        
-        
-        
-            <div class="mb-5 d-flex justify-content-between main-loop-card">
-<div class="pr-3">
-	<h2 class="mb-1 h4 font-weight-bold">
-	<a class="text-dark" href="/dabuda_blog/poslednata-stranica/">31 декември – последната страница</a>
-	</h2>
-	<p class="excerpt">
-	   The first mass-produced book to deviate from a rectilinear format, at least in the United States, is thought to be this 1863 edition of Red Riding Hood, cut into the shape of the prot...
-	</p>
-	<small class="d-block text-muted">
-		В <span class="catlist">
-		
-		<a class="text-capitalize text-muted smoothscroll" href="/dabuda_blog/categories.html#статии">Статии</a><span class="sep">, </span>
-		
-		</span>
-	</small>
-	<small class="text-muted">
-		Dec 31, 2016
-	</small>
-</div>
 
-	<div class="col-md-3 pr-0 text-right">
-	<a href="/dabuda_blog/poslednata-stranica/">
-	<img class="w-100" src="/dabuda_blog/assets/images/3.jpg" alt="31 декември – последната страница">
-	</a>
-	</div>
 
-</div>
-        
-        
-        
-            <div class="mb-5 d-flex justify-content-between main-loop-card">
-<div class="pr-3">
-	<h2 class="mb-1 h4 font-weight-bold">
-	<a class="text-dark" href="/dabuda_blog/vek-razvitie/">21 век – самоунищожение или личностно развитие</a>
-	</h2>
-	<p class="excerpt">
-	   Even the press, the classroom, the platform, and the pulpit in many instances do not give us objective and unbiased truths. To save man from the morass of propaganda, in my opinion, i...
-	</p>
-	<small class="d-block text-muted">
-		В <span class="catlist">
-		
-		<a class="text-capitalize text-muted smoothscroll" href="/dabuda_blog/categories.html#статии">Статии</a><span class="sep">, </span>
-		
-		</span>
-	</small>
-	<small class="text-muted">
-		Nov 28, 2016
-	</small>
-</div>
 
-	<div class="col-md-3 pr-0 text-right">
-	<a href="/dabuda_blog/vek-razvitie/">
-	<img class="w-100" src="/dabuda_blog/assets/images/3.jpg" alt="21 век – самоунищожение или личностно развитие">
-	</a>
-	</div>
-
-</div>
+<div class="container-lg pt-4 pb-4">
+	<div class="row justify-content-center">
         
         
+        <!-- Share -->
+		<div class="col-lg-2 pr-4 mb-4 col-md-12">
+			<div class="sticky-top sticky-top-offset text-center">
+				<div class="text-muted">
+					Сподели
+				</div>
+				<div class="share d-inline-block">
+					<!-- AddToAny BEGIN -->
+					<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+						<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+						<a class="a2a_button_facebook"></a>
+						<a class="a2a_button_twitter"></a>
+					</div>
+					<script async src="https://static.addtoany.com/menu/page.js"></script>
+					<!-- AddToAny END -->
+				</div>
+			</div>
+		</div>
         
-        <div class="mt-5">
-         <!-- Pagination links -->
+        
+		<div class="col-md-12 col-lg-8">
             
-            <ul class="pagination"> 
-              
-                <li class="page-item disabled"><span class="prev page-link">&laquo;</span></li>
-              
+            <!-- Article -->
+			<article class="article-post">                
+			<p>I’ve been through fire and water, I tell you! From my earliest pebblehood the wildest things you could imagine have been happening to this world of ours, and I have been right in the midst of them.</p>
 
-              
-                
-                <li class="page-item disabled"><span class="webjeda page-link">1</span></li>
-                
-              
-                
-                <li class="page-item"><a class="page-link" href="/dabuda_blog/page2">2</a></li>
-                
-              
-                
-                <li class="page-item"><a class="page-link" href="/dabuda_blog/page3">3</a></li>
-                
-              
+<p>So begins Hallam Hawksworth’s The Strange Adventures of a Pebble. Written in the 1920s, the book was part of a series which also included The Adventures of a Grain of Dust and A Year in the Wonderland of Trees, all of which were supposed to introduce children to the world of Natural Sciences.</p>
 
-              
-                <li class="page-item"><a class="page-link" href="/dabuda_blog/page2/">Следваща страница &raquo;</a></li>
-              
-            </ul>
-                  
-        </div>
+                
+			</article>
+			
+			<!-- Tags -->
+			<div class="mb-4">
+				<span class="taglist">
+				
+				  <a class="sscroll btn btn-light btn-sm font-weight-bold" href="/dabuda_blog/tags.html#featured">featured</a>
+				
+				</span>
+			</div>
+ 
+            <!-- Mailchimp Subscribe Form -->
+            
+			<div class="border p-5 bg-lightblue">
+				<div class="row justify-content-between">
+					<div class="col-md-6 mb-2 mb-md-0">
+						<h5 class="font-weight-bold">ПРИСЪЕДИНИ СЕ</h5>
+						 Стани част от тези, които са избрали да бъдат! Въведи имейла си в полето, за да получиш още вдъхновяващи статии и видеоклипове.
+					</div>
+					<div class="col-md-6">
+						<div class="row">
+                            <form action="https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b" method="post" name="mc-embedded-subscribe-form" class="wj-contact-form validate w-100" target="_blank" novalidate>
+                            <div class="mc-field-group">
+							
+								<input type="email" placeholder="Въведи имейла си тук" name="EMAIL" class="required email form-control w-100" id="mce-EMAIL" autocomplete="on" required>
+							
+							
+								<button type="submit" value="Subscribe" name="subscribe" class="heart btn btn-success btn-block w-100 mt-2">Присъедини ме</button>
+							
+                            </div>
+                            </form>
+						</div>
+					</div>
+				</div>
+			</div>
+            
+            
+            
+             <!-- Author Box 
+                				
+				<div class="row mt-5">
+					<div class="col-md-2 align-self-center">
+                         
+                        <img class="rounded-circle" src="/dabuda_blog//assets/images/avatar1.jpg" alt="Даниел Богдански" width="90"/>
+                         
+					</div>
+					<div class="col-md-10">		
+                        <h5 class="font-weight-bold">Написано от Даниел Богдански <span><a target="_blank" href="https://twitter.com/wowthemesnet" class="btn btn-outline-success btn-sm btn-round ml-2">Последвай</a></span></h5>
+						Здравейте, аз съм автора на Dabuda.net. В момента съм на 22 години и уча международен бизнес в Холандия.					
+					</div>
+				</div>				
+                  -->
+            
+            <!-- Comments -->
+            
+                <!--  Don't edit anything here. Set your disqus id in _config.yml -->
+
+<div id="comments" class="mt-5">
+    <div id="disqus_thread">
+    </div>
+    <script type="text/javascript">
+        var disqus_shortname = 'demowebsite'; 
+        var disqus_developer = 0;
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = window.location.protocol + '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>
+    Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+    </noscript>
+</div>
+            
+            
+		</div>
         
-    </div>
-    
-    <div class="col-md-4">
-        <div class="sticky-top sticky-top-offset">
-    <h4 class="font-weight-bold spanborder"><span>Избрани</span></h4>  
-    <ol class="list-featured">				
-                        
-            <li class="mb-4">
-            <span>
-                <h6 class="font-weight-bold">
-                    <a href="/dabuda_blog/kakvo-e-nostalgia/" class="text-dark">Какво е това носталгия?</a>
-                </h6>
-                <span class="d-block text-muted">
-                    В <span class="catlist">
-                    
-                    <a class="text-capitalize text-muted smoothscroll" href="/dabuda_blog/categories.html#статии">Статии</a><span class="sep">, </span>
-                    
-                    </span>
-                </span>
-            </span>
-            </li>                
-                        
-            <li class="mb-4">
-            <span>
-                <h6 class="font-weight-bold">
-                    <a href="/dabuda_blog/kakvo-oznachava-da-budesh-buditel/" class="text-dark">Какво означава да бъдеш будител?</a>
-                </h6>
-                <span class="d-block text-muted">
-                    В <span class="catlist">
-                    
-                    <a class="text-capitalize text-muted smoothscroll" href="/dabuda_blog/categories.html#статии">Статии</a><span class="sep">, </span>
-                    
-                    </span>
-                </span>
-            </span>
-            </li>                
-                        
-            <li class="mb-4">
-            <span>
-                <h6 class="font-weight-bold">
-                    <a href="/dabuda_blog/kakvo-spira-mladite/" class="text-dark">Какво спира младите в България да следват мечтите си?</a>
-                </h6>
-                <span class="d-block text-muted">
-                    В <span class="catlist">
-                    
-                    <a class="text-capitalize text-muted smoothscroll" href="/dabuda_blog/categories.html#статии">Статии</a><span class="sep">, </span>
-                    
-                    </span>
-                </span>
-            </span>
-            </li>                
-                        
-            <li class="mb-4">
-            <span>
-                <h6 class="font-weight-bold">
-                    <a href="/dabuda_blog/pesenta-na-vlaka/" class="text-dark">Песента на влака</a>
-                </h6>
-                <span class="d-block text-muted">
-                    В <span class="catlist">
-                    
-                    <a class="text-capitalize text-muted smoothscroll" href="/dabuda_blog/categories.html#статии">Статии</a><span class="sep">, </span>
-                    
-                    </span>
-                </span>
-            </span>
-            </li>                
-           
-    </ol>
-</div>     
-    </div>
-    
+        
+	</div>
 </div>
 
 
-
+<!-- Aletbar Prev/Next -->
+<div class="alertbar">
+    <div class="container">
+        <div class="row prevnextlinks small font-weight-bold">
+          
+            <div class="col-md-6 rightborder pl-0">
+                <a class="text-dark" href="/dabuda_blog/chereshko-chyorna-vishnichko/"> <img height="30px" class="mr-1" src="/dabuda_blog/assets/images/cover3.jpg">  'Черешко, чьорна вишничко'</a>
+            </div>
+          
+          
+            <div class="col-md-6 text-right pr-0">
+                <a class="text-dark" href="/dabuda_blog/kakvo-oznachava-da-budesh-buditel/"> Какво означава да бъдеш будител?  <img height="30px" class="ml-1" src="/dabuda_blog/assets/images/cover5.jpg"> </a>
+            </div>
+          
+        </div>
+    </div>
 </div>
+
     </main>
 
 
