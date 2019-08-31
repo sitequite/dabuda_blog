@@ -168,17 +168,17 @@ var documents = [{
     "id": 15,
     "url": "http://localhost:4000/dabuda_blog/index.html",
     "title": "Mundana Free Jekyll Theme",
-    "body": "                      ЗА МЕН                  Казвам се Даниел Богдански и съм роден и израснал в красивия и патриотичен град Карлово. Страст и хоби са . . .                 Прочети още            	                            Всички постове:                   		Какво е това носталгия?	: 		  This is changed. As I engage in the so-called “bull sessions” around and about the school, I too often find that most college men have a misconception of the purpose of education. Mos. . . 	 			В 				Статии, 								Feb 02, 2017						                  		5 необикновени места в българските планини	: 		  The first mass-produced book to deviate from a rectilinear format, at least in the United States, is thought to be this 1863 edition of Red Riding Hood, cut into the shape of the prot. . . 	 			В 				Статии, 								Feb 02, 2017						                  		31 декември – последната страница	: 		  The first mass-produced book to deviate from a rectilinear format, at least in the United States, is thought to be this 1863 edition of Red Riding Hood, cut into the shape of the prot. . . 	 			В 				Статии, 								Dec 31, 2016						                  		21 век – самоунищожение или личностно развитие	: 		  Even the press, the classroom, the platform, and the pulpit in many instances do not give us objective and unbiased truths. To save man from the morass of propaganda, in my opinion, i. . . 	 			В 				Статии, 								Nov 28, 2016						                                                &laquo;                              1                               2                               3                              Следваща страница &raquo;                                          Избрани:    				                                          Какво е това носталгия?                          В                     Статии,                                                                                           Какво означава да бъдеш будител?                          В                     Статии,                                                                                           Какво спира младите в България да следват мечтите си?                          В                     Статии,                                                                                           Песента на влака                          В                     Статии,                                                               "
+    "body": "                            ЗАЩО?  :       От доста време не съм писал. Даже празният лист пред мен, тишината в стаята, тихата музика на фон ме плашат леко. Може би, защото ког. . .               В                 Статии,                                        Jul 18, 2018                                                                                                                                         За малко в България          :                       В                         Статии,                                                                  Feb 19, 2018                                                                                                                                                 На двадесет          :                       В                         Статии,                                                                  Aug 17, 2017                                                                                                                                                Да спреш за миг – тайната на щастието          :                       В                         Статии,                                                                  May 17, 2017                                                        ЗА МЕН                  Казвам се Даниел Богдански и съм роден и израснал в красивия и патриотичен град Карлово. Страст и хоби са . . .                 Прочети още            	                            Всички постове:                   		Какво е това носталгия?	: 		  This is changed. As I engage in the so-called “bull sessions” around and about the school, I too often find that most college men have a misconception of the purpose of education. Mos. . . 	 			В 				Статии, 								Feb 02, 2017						                  		5 необикновени места в българските планини	: 		  The first mass-produced book to deviate from a rectilinear format, at least in the United States, is thought to be this 1863 edition of Red Riding Hood, cut into the shape of the prot. . . 	 			В 				Статии, 								Feb 02, 2017						                  		31 декември – последната страница	: 		  The first mass-produced book to deviate from a rectilinear format, at least in the United States, is thought to be this 1863 edition of Red Riding Hood, cut into the shape of the prot. . . 	 			В 				Статии, 								Dec 31, 2016						                  		21 век – самоунищожение или личностно развитие	: 		  Even the press, the classroom, the platform, and the pulpit in many instances do not give us objective and unbiased truths. To save man from the morass of propaganda, in my opinion, i. . . 	 			В 				Статии, 								Nov 28, 2016						                                                &laquo;                              1                               2                               3                              Напред &raquo;                                          Избрани:    				                                          Какво е това носталгия?                          В                     Статии,                                                                                           Какво означава да бъдеш будител?                          В                     Статии,                                                                                           Какво спира младите в България да следват мечтите си?                          В                     Статии,                                                                                           Песента на влака                          В                     Статии,                                                               "
     }, {
     "id": 16,
     "url": "http://localhost:4000/dabuda_blog/page2/index.html",
     "title": "Mundana Free Jekyll Theme - страница 2 от 3",
-    "body": "  {% if page. url ==  /index. html  %}                    ЗА МЕН                  Казвам се Даниел Богдански и съм роден и израснал в красивия и патриотичен град Карлово. Страст и хоби са . . .                 Прочети още            	            {% endif %}                Всички постове:         {% for post in paginator. posts %}          {% include main-loop-card. html %}        {% endfor %}                   {% if paginator. total_pages &gt; 1 %}              {% if paginator. previous_page %}        &laquo; Предишна страница       {% else %}        &laquo;       {% endif %}       {% for page in (1. . paginator. total_pages) %}        {% if page == paginator. page %}        {{ page }}        {% elsif page == 1 %}        {{ page }}        {% else %}        {{ page }}        {% endif %}       {% endfor %}       {% if paginator. next_page %}        Следваща страница &raquo;       {% else %}        &raquo;       {% endif %}            {% endif %}                     {% include sidebar-featured. html %}      "
+    "body": "  {% if page. url ==  /index. html  %}      {% assign latest_post = site. posts[0] %}          &lt;div class= topfirstimage  style= background-image: url({% if latest_post. image contains  ://  %}{{ latest_post. image }}{% else %} {{site. baseurl}}/{{ latest_post. image}}{% endif %}); height: 200px;  background-size: cover;  background-repeat: no-repeat; &gt;&lt;/div&gt;           {{ latest_post. title }}  :       {{ latest_post. excerpt | strip_html | strip_newlines | truncate: 136 }}               В         {% for category in latest_post. categories %}        {{ category }},         {% endfor %}                                {{ latest_post. date | date: '%b %d, %Y' }}                            {% assign second_post = site. posts[1] %}                        {% if second_post. image %}                         &lt;img class= w-100  src= {% if second_post. image contains  ://  %}{{ second_post. image }}{% else %}{{ second_post. image | absolute_url }}{% endif %}  alt= {{ second_post. title }} &gt;                        {% endif %}                                    {{ second_post. title }}          :                       В             {% for category in second_post. categories %}            {{ category }},             {% endfor %}                                                      {{ second_post. date | date: '%b %d, %Y' }}                                    {% assign third_post = site. posts[2] %}                        {% if third_post. image %}                         &lt;img class= w-100  src= {% if third_post. image contains  ://  %}{{ third_post. image }}{% else %}{{site. baseurl}}/{{ third_post. image }}{% endif %}  alt= {{ third_post. title }} &gt;                        {% endif %}                                    {{ third_post. title }}          :                       В             {% for category in third_post. categories %}            {{ category }},             {% endfor %}                                                      {{ third_post. date | date: '%b %d, %Y' }}                                    {% assign fourth_post = site. posts[3] %}                        {% if fourth_post. image %}                        &lt;img class= w-100  src= {% if fourth_post. image contains  ://  %}{{ fourth_post. image }}{% else %}{{site. baseurl}}/{{ fourth_post. image }}{% endif %}  alt= {{ fourth_post. title }} &gt;                        {% endif %}                                    {{ fourth_post. title }}          :                       В             {% for category in fourth_post. categories %}            {{ category }},             {% endfor %}                                                      {{ fourth_post. date | date: '%b %d, %Y' }}                                                        ЗА МЕН                  Казвам се Даниел Богдански и съм роден и израснал в красивия и патриотичен град Карлово. Страст и хоби са . . .                 Прочети още            	            {% endif %}                Всички постове:         {% for post in paginator. posts %}          {% include main-loop-card. html %}        {% endfor %}                   {% if paginator. total_pages &gt; 1 %}              {% if paginator. previous_page %}        &laquo; Назад       {% else %}        &laquo;       {% endif %}       {% for page in (1. . paginator. total_pages) %}        {% if page == paginator. page %}        {{ page }}        {% elsif page == 1 %}        {{ page }}        {% else %}        {{ page }}        {% endif %}       {% endfor %}       {% if paginator. next_page %}        Напред &raquo;       {% else %}        &raquo;       {% endif %}            {% endif %}                     {% include sidebar-featured. html %}      "
     }, {
     "id": 17,
     "url": "http://localhost:4000/dabuda_blog/page3/index.html",
     "title": "Mundana Free Jekyll Theme - страница 3 от 3",
-    "body": "  {% if page. url ==  /index. html  %}                    ЗА МЕН                  Казвам се Даниел Богдански и съм роден и израснал в красивия и патриотичен град Карлово. Страст и хоби са . . .                 Прочети още            	            {% endif %}                Всички постове:         {% for post in paginator. posts %}          {% include main-loop-card. html %}        {% endfor %}                   {% if paginator. total_pages &gt; 1 %}              {% if paginator. previous_page %}        &laquo; Предишна страница       {% else %}        &laquo;       {% endif %}       {% for page in (1. . paginator. total_pages) %}        {% if page == paginator. page %}        {{ page }}        {% elsif page == 1 %}        {{ page }}        {% else %}        {{ page }}        {% endif %}       {% endfor %}       {% if paginator. next_page %}        Следваща страница &raquo;       {% else %}        &raquo;       {% endif %}            {% endif %}                     {% include sidebar-featured. html %}      "
+    "body": "  {% if page. url ==  /index. html  %}      {% assign latest_post = site. posts[0] %}          &lt;div class= topfirstimage  style= background-image: url({% if latest_post. image contains  ://  %}{{ latest_post. image }}{% else %} {{site. baseurl}}/{{ latest_post. image}}{% endif %}); height: 200px;  background-size: cover;  background-repeat: no-repeat; &gt;&lt;/div&gt;           {{ latest_post. title }}  :       {{ latest_post. excerpt | strip_html | strip_newlines | truncate: 136 }}               В         {% for category in latest_post. categories %}        {{ category }},         {% endfor %}                                {{ latest_post. date | date: '%b %d, %Y' }}                            {% assign second_post = site. posts[1] %}                        {% if second_post. image %}                         &lt;img class= w-100  src= {% if second_post. image contains  ://  %}{{ second_post. image }}{% else %}{{ second_post. image | absolute_url }}{% endif %}  alt= {{ second_post. title }} &gt;                        {% endif %}                                    {{ second_post. title }}          :                       В             {% for category in second_post. categories %}            {{ category }},             {% endfor %}                                                      {{ second_post. date | date: '%b %d, %Y' }}                                    {% assign third_post = site. posts[2] %}                        {% if third_post. image %}                         &lt;img class= w-100  src= {% if third_post. image contains  ://  %}{{ third_post. image }}{% else %}{{site. baseurl}}/{{ third_post. image }}{% endif %}  alt= {{ third_post. title }} &gt;                        {% endif %}                                    {{ third_post. title }}          :                       В             {% for category in third_post. categories %}            {{ category }},             {% endfor %}                                                      {{ third_post. date | date: '%b %d, %Y' }}                                    {% assign fourth_post = site. posts[3] %}                        {% if fourth_post. image %}                        &lt;img class= w-100  src= {% if fourth_post. image contains  ://  %}{{ fourth_post. image }}{% else %}{{site. baseurl}}/{{ fourth_post. image }}{% endif %}  alt= {{ fourth_post. title }} &gt;                        {% endif %}                                    {{ fourth_post. title }}          :                       В             {% for category in fourth_post. categories %}            {{ category }},             {% endfor %}                                                      {{ fourth_post. date | date: '%b %d, %Y' }}                                                        ЗА МЕН                  Казвам се Даниел Богдански и съм роден и израснал в красивия и патриотичен град Карлово. Страст и хоби са . . .                 Прочети още            	            {% endif %}                Всички постове:         {% for post in paginator. posts %}          {% include main-loop-card. html %}        {% endfor %}                   {% if paginator. total_pages &gt; 1 %}              {% if paginator. previous_page %}        &laquo; Назад       {% else %}        &laquo;       {% endif %}       {% for page in (1. . paginator. total_pages) %}        {% if page == paginator. page %}        {{ page }}        {% elsif page == 1 %}        {{ page }}        {% else %}        {{ page }}        {% endif %}       {% endfor %}       {% if paginator. next_page %}        Напред &raquo;       {% else %}        &raquo;       {% endif %}            {% endif %}                     {% include sidebar-featured. html %}      "
     }, {
     "id": 18,
     "url": "http://localhost:4000/dabuda_blog/zashto/",
@@ -324,6 +324,126 @@ function lunr_search(term) {
         <div class="container">
     
 
+<!-- Begin post excerpts, let's highlight the first 4 posts on top -->
+<div class="row remove-site-content-margin">
+    
+    <!-- latest post -->
+    
+    <div class="col-md-6">
+    <div class="card border-0 mb-4 box-shadow">   
+    <a href="/dabuda_blog/zashto/">
+    <div class="topfirstimage" style="background-image: url( /dabuda_blog/assets/images/cover14.jpg); height: 200px;    background-size: cover;    background-repeat: no-repeat;"></div>     
+    </a>
+    <div class="card-body px-0 pb-0 d-flex flex-column align-items-start">
+    <h2 class="h4 font-weight-bold">
+    <a class="text-dark" href="/dabuda_blog/zashto/">ЗАЩО?</a>
+    </h2>
+    <p class="excerpt">
+        От доста време не съм писал. Даже празният лист пред мен, тишината в стаята, тихата музика на фон ме плашат леко. Може би, защото ког...
+    </p>
+    <div>
+        <small class="d-block text-muted">
+            В <span class="catlist">
+                
+                <a class="text-capitalize text-muted smoothscroll" href="/dabuda_blog/categories.html#статии">Статии</a><span class="sep">, </span>
+                
+                </span>                   
+        </small>
+        <small class="text-muted">
+            Jul 18, 2018
+        </small>
+    </div>
+    </div>
+    </div>
+    </div>    
+
+    <div class="col-md-6">
+        
+        <!-- second latest post -->
+                
+        <div class="mb-3 d-flex align-items-center">                
+                
+                <div class="col-md-4">
+                <a href="/dabuda_blog/za-malko-v-bulgaria/">
+                 <img class="w-100" src="http://localhost:4000/dabuda_blog/assets/images/cover13.jpg" alt="За малко в България">
+                </a>
+                </div>
+                                
+                <div>
+                    <h2 class="mb-2 h6 font-weight-bold">
+                    <a class="text-dark" href="/dabuda_blog/za-malko-v-bulgaria/">За малко в България</a>
+                    </h2>
+                    <small class="d-block text-muted">
+                        В <span class="catlist">
+                        
+                        <a class="text-capitalize text-muted smoothscroll" href="/dabuda_blog/categories.html#статии">Статии</a><span class="sep">, </span>
+                        
+                        </span>                   
+                    </small>
+                    <small class="text-muted">
+                        Feb 19, 2018
+                    </small>
+                </div>
+            </div>
+        
+        <!-- third latest post -->
+                
+        <div class="mb-3 d-flex align-items-center">                
+                
+                <div class="col-md-4">
+                <a href="/dabuda_blog/na-dvadeset/">
+                 <img class="w-100" src="/dabuda_blog/assets/images/cover12.jpg" alt="На двадесет">
+                </a>
+                </div>
+                                
+                <div>
+                    <h2 class="mb-2 h6 font-weight-bold">
+                    <a class="text-dark" href="/dabuda_blog/na-dvadeset/">На двадесет</a>
+                    </h2>
+                    <small class="d-block text-muted">
+                        В <span class="catlist">
+                        
+                        <a class="text-capitalize text-muted smoothscroll" href="/dabuda_blog/categories.html#статии">Статии</a><span class="sep">, </span>
+                        
+                        </span>                   
+                    </small>
+                    <small class="text-muted">
+                        Aug 17, 2017
+                    </small>
+                </div>
+            </div>
+        
+        <!-- fourth latest post -->
+                
+        <div class="mb-3 d-flex align-items-center">                
+                
+                <div class="col-md-4">
+                <a href="/dabuda_blog/da-spresh-za-mig-shtastie/">
+                <img class="w-100" src="/dabuda_blog/assets/images/cover11.jpg" alt="Да спреш за миг – тайната на щастието">
+                </a>
+                </div>
+                                
+                <div>
+                    <h2 class="mb-2 h6 font-weight-bold">
+                    <a class="text-dark" href="/dabuda_blog/da-spresh-za-mig-shtastie/">Да спреш за миг – тайната на щастието</a>
+                    </h2>
+                    <small class="d-block text-muted">
+                        В <span class="catlist">
+                        
+                        <a class="text-capitalize text-muted smoothscroll" href="/dabuda_blog/categories.html#статии">Статии</a><span class="sep">, </span>
+                        
+                        </span>                   
+                    </small>
+                    <small class="text-muted">
+                        May 17, 2017
+                    </small>
+                </div>
+            </div>
+        
+    </div>
+    
+</div>    
+    
 <!-- Sticky - add sticky tag to the post you want to highlight here - tags: [sticky] -->
 <div class="jumbotron jumbotron-fluid jumbotron-home pt-0 pb-0 mt-3 mb-2rem bg-lightblue position-relative">
     <div class="pl-4 pr-0 h-100 tofront">
@@ -497,7 +617,7 @@ function lunr_search(term) {
               
 
               
-                <li class="page-item"><a class="page-link" href="/dabuda_blog/page2/">Следваща страница &raquo;</a></li>
+                <li class="page-item"><a class="page-link" href="/dabuda_blog/page2/">Напред &raquo;</a></li>
               
             </ul>
                   
