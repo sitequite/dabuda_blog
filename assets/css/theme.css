@@ -26,7 +26,8 @@ img {
 	margin-left:-50vw;
 	left:50%;
 }
-.fix-img{margin: 0 auto; display: block;} em {text-align: center;margin: 0 auto; display: block;}
+.fix-img {margin: 0 auto; display: block;} 
+em {text-align: center;margin: 0 auto; display: block;}
 a,a:hover {
 	transition:all .2s;
 	text-decoration:none;
