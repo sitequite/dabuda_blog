@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/dabuda_blog/za-men/</loc>
-<lastmod>2014-02-04T00:00:00+02:00</lastmod>
-</url>
-<url>
 <loc>http://localhost:4000/dabuda_blog/razgovor-sus-sebe-si/</loc>
 <lastmod>2016-09-10T00:00:00+03:00</lastmod>
 </url>
@@ -82,9 +78,6 @@
 <loc>http://localhost:4000/dabuda_blog/categories.html</loc>
 </url>
 <url>
-<loc>http://localhost:4000/dabuda_blog/contact.html</loc>
-</url>
-<url>
 <loc>http://localhost:4000/dabuda_blog/privacy-policy.html</loc>
 </url>
 <url>
@@ -92,6 +85,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/dabuda_blog/videos.html</loc>
+</url>
+<url>
+<loc>http://localhost:4000/dabuda_blog/za-men.html</loc>
 </url>
 <url>
 <loc>http://localhost:4000/dabuda_blog/blog/</loc>
